@@ -1,0 +1,23 @@
+{
+  "namespace": "com.app.registration_service.dto",
+  "name": "RegistrationDetails",
+  "type": "record",
+  "fields": [
+    {
+    "name": "firstName",
+    "type": "string"
+  },
+    {
+      "name": "lastName",
+      "type": "string"
+    },
+    {
+      "name": "emailId",
+      "type": "string"
+    },
+    {
+      "name": "isAdmin",
+      "type": "boolean"
+    }
+  ]
+}

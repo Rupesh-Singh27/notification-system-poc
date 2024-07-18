@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: registration-service
+  kafka:
+    producer:
+      bootstrap-servers: "127.0.0.1:9092"
+      key-serializer: "org.apache.kafka.common.serialization.StringSerializer"
+      value-serializer: "io.confluent.kafka.serializers.KafkaAvroSerializer"
+      properties:
+        schema:
+          registry:
+            url: "http://192.168.99.223:8081"
+    topic:
+      name: register_topic
+
+server:
+  port: 8081
+
