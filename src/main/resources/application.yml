@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notification-service
+#  kafka:
+#    streams:
+#      bootstrap-servers: "localhost:9092"
+#      application-id: "registration-stream"
+
+server:
+  port: 8889
+
+#GRPC server info
+grpc:
+  server:
+    host: localhost
+    port: 9595
